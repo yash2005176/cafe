@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Cafe Hangout</title>
+
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+            <span class="brand-mark">☕</span>
+            <span>Cafe <b>Hangout</b></span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a class="active" href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+
+        <p class="eyebrow">A FEAST FOR THE EYES</p>
+
+        <h1>
+            Little moments,
+            <br>
+            <em>big memories.</em>
+        </h1>
+
+        <p>
+            Take a peek at the Hangout vibe.
+        </p>
+
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery-section">
+
+        <div class="gallery-grid">
+
+            <button class="gallery-item tall">
+                <img
+                    src="assets/images/gallery/cafe1.jpg"
+                    alt="Cafe atmosphere"
+                >
+            </button>
+
+            <button class="gallery-item">
+                <img
+                    src="assets/images/gallery/cafe2.jpg"
+                    alt="Coffee moment"
+                >
+            </button>
+
+            <button class="gallery-item">
+                <img
+                    src="assets/images/gallery/cafe3.jpg"
+                    alt="Cafe food"
+                >
+            </button>
+
+            <button class="gallery-item">
+                <img
+                    src="assets/images/gallery/cafe4.jpg"
+                    alt="Cafe interior"
+                >
+            </button>
+
+            <button class="gallery-item">
+                <img
+                    src="assets/images/cafe-interior.jpg"
+                    alt="Cafe interior"
+                >
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" aria-hidden="true">
+
+        <button class="lightbox-close" aria-label="Close image">
+            ×
+        </button>
+
+        <img alt="Expanded gallery image">
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a class="brand" href="index.html">
+            ☕ Cafe <b>Hangout</b>
+        </a>
+
+        <p>
+            Good coffee. Great company. Better memories.
+        </p>
+
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <small>
+            © <span class="year"></span> Cafe Hangout.
+        </small>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin-shortcut.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+
+</body>
+
+</html>

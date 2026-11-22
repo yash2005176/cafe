@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | Cafe Hangout</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+            <span class="brand-mark">☕</span>
+            <span>Cafe <b>Hangout</b></span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="page-hero menu-hero">
+
+        <p class="eyebrow">FRESHLY MADE, ALWAYS</p>
+
+        <h1>
+            Take a look at
+            <br> our <em>menu.</em>
+        </h1>
+
+        <p>
+            Find your new favorite sip or bite.
+        </p>
+
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu-section">
+
+        <div id="menuFilters" class="filter-bar" aria-label="Filter menu by category"></div>
+        <p id="menuStatus" class="menu-status" role="status" aria-live="polite">
+            Loading menu...
+        </p>
+        <div id="menuGrid" class="menu-grid"></div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a class="brand" href="index.html">
+            ☕ Cafe <b>Hangout</b>
+        </a>
+
+        <p>
+            Good coffee. Great company. Better memories.
+        </p>
+
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <small>
+            © <span class="year"></span> Cafe Hangout.
+        </small>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin-shortcut.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

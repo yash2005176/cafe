@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | Cafe Hangout</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-container">
+
+        <div class="login-logo">
+            <i class="fa-solid fa-mug-hot"></i>
+        </div>
+
+        <h1>Cafe Hangout</h1>
+
+        <p class="login-subtitle">
+            Admin Panel Login
+        </p>
+
+        <form id="loginForm">
+
+            <!-- Email -->
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="cafehangout@gmail.com"
+                    autocomplete="username"
+                    required
+                >
+
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" id="loginBtn" class="btn-primary">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login to Dashboard
+
+            </button>
+
+            <!-- Message -->
+            <p id="loginMessage" class="message"></p>
+
+        </form>
+
+        <!-- Back to Website -->
+        <a href="../index.html" class="back-home">
+
+            <i class="fa-solid fa-arrow-left"></i> Back to Website
+
+        </a>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="../js/supabase.js"></script>
+
+    <script src="../js/auth.js"></script>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

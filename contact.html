@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Cafe Hangout</title>
+
+    <link rel="stylesheet" href="css/contact.css?v=20261121">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+            <span class="brand-mark">☕</span>
+            <span>Cafe <b>Hangout</b></span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+
+        <p class="eyebrow">COME SAY HELLO</p>
+
+        <h1>
+            Let's <em>hangout.</em>
+        </h1>
+
+        <p>
+            We'd love to see you. Find us, or send a message.
+        </p>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-layout">
+
+        <!-- Contact Information -->
+        <div class="contact-info reveal">
+
+            <p class="eyebrow">VISIT CAFE HANGOUT</p>
+
+            <h2>
+                Your next coffee
+                <br> is <em>waiting.</em>
+            </h2>
+
+            <div class="contact-detail">
+
+                <span>📍</span>
+
+                <div>
+                    <b>Location</b>
+
+                    <p>
+                        Cafe Hangout, Maharashtra, India
+                    </p>
+
+                    <a href="https://www.google.com/maps/place/Cafe+hangout/" target="_blank" rel="noopener noreferrer">
+                        Open in Google Maps ↗
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="contact-detail">
+
+                <span>💬</span>
+
+                <div>
+                    <b>Social Media</b>
+
+                    <p>
+                        Follow us and share your Hangout moments.
+                    </p>
+
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        Instagram ↗
+                    </a>
+                </div>
+
+            </div>
+
+            <a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&destination=19.2589261,76.7824499" target="_blank" rel="noopener noreferrer">
+                Get Directions ↗
+            </a>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal">
+
+            <form class="contact-form">
+
+                <h3>Send us a message</h3>
+
+                <label for="name">
+                    Your name
+                </label>
+
+                <input id="name" name="name" type="text" maxlength="150" autocomplete="name" placeholder="Enter your name" required>
+
+                <label for="email">
+                    Email address
+                </label>
+
+                <input id="email" name="email" type="email" maxlength="320" autocomplete="email" placeholder="you@example.com" required>
+
+                <label for="phone">
+                    Phone number <span>(optional)</span>
+                </label>
+
+                <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="50" placeholder="Your phone number">
+
+                <label for="subject">
+                    Subject <span>(optional)</span>
+                </label>
+
+                <input id="subject" name="subject" type="text" maxlength="200" placeholder="What is your message about?">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea id="message" name="message" rows="5" maxlength="5000" placeholder="Tell us something..." required></textarea>
+
+                <button class="btn btn-primary" type="submit">
+                    Send Message ↗
+                </button>
+
+                <p class="form-status" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Google Maps -->
+    <section class="map-section">
+
+        <iframe title="Cafe Hangout Map" src="https://maps.google.com/maps?q=19.2589261,76.7824499&z=15&output=embed" loading="lazy" allowfullscreen></iframe>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a class="brand" href="index.html">
+            ☕ Cafe <b>Hangout</b>
+        </a>
+
+        <p>
+            Good coffee. Great company. Better memories.
+        </p>
+
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <small>
+            © <span class="year"></span> Cafe Hangout.
+        </small>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin-shortcut.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js?v=20261121"></script>
+
+</body>
+
+</html>
